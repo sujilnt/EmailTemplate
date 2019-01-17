@@ -1,0 +1,15 @@
+{
+  "name": "energyreportgenerator",
+  "version": "1.0.0",
+  "description": "A tool for automating reports using google puppeteer in DEXMA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.11.0",
+    "require": "^2.4.20"
+  }
+}
