@@ -1,13 +1,22 @@
 const puppeteer = require('puppeteer');
+const path= require("path");
+const  cwd= process.cwd();
+const imageDir= path.resolve(`${cwd}\\src\\images`) ;
+console.log(imageDir);
 const _launchsetting = (obj={})=>{
   const setting = obj.launchSettings;
-  return obj.length ?  setting : {headless:false,devtools:false}
+  return obj.length ?  setting : {
+      headless:false,
+      devtools:false,
+      args: [`--data-path= ${imageDir}`]
+  }
 };
 
 const loginScreen = (obj)=>{
     const settings = _launchsetting(obj);
     const _email= obj.email;
     const _password=obj.password;
+    console.log(settings,_email);
     puppeteer.launch(settings).then(async browser=>{
         const page = await browser.newPage();
         await page.goto("https://optimisedbuildings.dexcell.com/login.htm");
@@ -27,13 +36,18 @@ const loginScreen = (obj)=>{
         await page.type("input[class='start']","01/12/2018");
         await page.waitFor(1000);
         await page.click(".btn[id='apply_dates']");
+        await page.screenshot({path: path.resolve(__dirname,"images/fullPage.png"), fullPage: true});
         await page.waitFor(2000);
-    
+        console.log(path.resolve(__dirname,"images"));
         await page._client.send('Page.setDownloadBehavior', {
             behavior: 'allow',
-            downloadPath: ""
+            downloadPath: path.resolve(__dirname,"images")
         });
         await page.click(".btn[id='link-export-img']");
+        await page.waitFor(5000);
+        await page.close();
+        await page.waitFor(2000);
+        await browser.close();
     });
 };
 
@@ -43,9 +57,11 @@ const getAllAssets = async (obj)=>{
 };
 const data = {
     email: "sujil@optimisedbuildings.com",
-    password: "optimised1234"
+    password: "optimised1234",
+    headless:false,
+    devtools:true,
+    
 };
-
 
 getAllAssets(data);
 
