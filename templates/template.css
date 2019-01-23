@@ -1,0 +1,56 @@
+body,*{
+    margin:0;
+    padding:0;
+}
+.flexContainer{
+  display: flex;
+}
+.colFlexDirection{
+    flex-direction: column;
+}
+.flexWrap{
+    flex-wrap: wrap;
+}
+.justifyContentCenter{
+    justify-content: center;
+}
+.fullWidth{
+    width:100%;
+}
+.positionRelative{
+    position:relative;
+}
+.alignFlexItems{
+    align-items: center;
+}
+.alignFlexContents{
+    align-content: center;
+}
+section{
+    position: relative;
+    width: 100%;
+}
+.flexContainerBorder{
+    border: 1px solid black;
+}
+.halfWidth{
+    width: 50%;
+}
+
+/*
+all Id below
+*/
+
+#header{
+    border-bottom: 5px solid black;
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+
+@page {
+    size: 5.5in 8.5in;
+}
+
+@page {
+    size: A4;
+}

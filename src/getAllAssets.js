@@ -1,14 +1,11 @@
 const puppeteer = require('puppeteer');
 const path= require("path");
-const  cwd= process.cwd();
-const imageDir= path.resolve(`${cwd}\\src\\images`) ;
-console.log(imageDir);
+
 const _launchsetting = (obj={})=>{
   const setting = obj.launchSettings;
   return obj.length ?  setting : {
       headless:false,
       devtools:false,
-      args: [`--data-path= ${imageDir}`]
   }
 };
 
@@ -36,12 +33,13 @@ const loginScreen = (obj)=>{
         await page.type("input[class='start']","01/12/2018");
         await page.waitFor(1000);
         await page.click(".btn[id='apply_dates']");
+        
         await page.screenshot({path: path.resolve(__dirname,"images/fullPage.png"), fullPage: true});
         await page.waitFor(2000);
-        console.log(path.resolve(__dirname,"images"));
+       
         await page._client.send('Page.setDownloadBehavior', {
             behavior: 'allow',
-            downloadPath: path.resolve(__dirname,"images")
+            downloadPath: path.resolve(__dirname,"images/screenshot.png")
         });
         await page.click(".btn[id='link-export-img']");
         await page.waitFor(5000);
