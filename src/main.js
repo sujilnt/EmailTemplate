@@ -1,7 +1,10 @@
-import getAllAssets from "./getAllAssets";
+const {getAllAssets} =require("./getAllAssets");
 
-const main=()=>{
-	console.log("working",getAllAssets);
+const main=async ()=>{
+	const c1 = await getAllAssets();
+	console.log("c1",c1);
 };
 
-export default main;
+module.exports={
+	main
+};

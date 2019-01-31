@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const path= require("path");
 
-const generateReport = async ()=>{
+const generateReport = async (fileName)=>{
   const browser= await puppeteer.launch();
   const page = await browser.newPage();
   
@@ -19,4 +19,4 @@ module.exports={
 	generateReport
 };
 
-generateReport();
+//generateReport("text.pdf");
