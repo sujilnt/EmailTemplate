@@ -45,22 +45,26 @@ const loginScreen = (obj,fs)=>{
            //const iframeDoc = iframe.contentWindow.document;
            const iframeP = iframe.getElementsByTagName("img");
            console.log("show something........",iframe,iframeP,typeof(iframeP),[...iframeP]);
-           const data = [...iframeP].map((data)=>{
+           const images = [...iframeP].map((data)=>{
                return data.src;
            });
-           return data;
+           /*
+           const Electable = iframe.getElementById("div-table-summary");
+           return Electable.outerHTML;*/
+           
+           const gasTable = iframe.getElementById("summaryTable");
+           console.log(gasTable);
+           return gasTable;
        });
-       iframeParagraph.map((data)=>{
-           console.log("dataaaa",data);
-       })
+       
        console.log(iframeParagraph); // prints "This is a paragraph"
        
    });
   
 };
 
-const getAllAssets = async (obj,fs)=>{
-    loginScreen(obj,fs);
+const getAllAssets = async (obj,path)=>{
+    loginScreen(obj,path);
     
 };
 const data = {

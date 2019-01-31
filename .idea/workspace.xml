@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c44647-da92-4954-b9ba-37bc71080492" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/legacyCode-GetAllassets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/template1/t1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generateReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generateReport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/getAllAssets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/getAllAssets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/fullPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/text.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/report1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/getAllAssets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1040">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="71">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -109,16 +99,16 @@
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/templates/template1/t1.html" />
         <option value="$PROJECT_DIR$/1.json" />
-        <option value="$PROJECT_DIR$/src/getAllAssets.js" />
         <option value="$PROJECT_DIR$/src/generateReport.js" />
+        <option value="$PROJECT_DIR$/src/getAllAssets.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="-7" />
-    <option name="width" value="1295" />
-    <option name="height" value="695" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -199,17 +189,25 @@
       <workItem from="1548326883720" duration="599000" />
       <workItem from="1548340167047" duration="599000" />
       <workItem from="1548754619429" duration="26780000" />
-      <workItem from="1548850080356" duration="10150000" />
+      <workItem from="1548850080356" duration="15244000" />
     </task>
+    <task id="LOCAL-00001" summary="feature : Adding 2 feautures &#10;1) getAllAssets =&gt; retrieves the download images &#10;2) generate Reports in pdf by input html .">
+      <created>1548952518480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548952518480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69570000" />
+    <option name="totallyTimeSpent" value="74664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="789" y="61" width="342" height="917" id="Project" order="0" visible="true" weight="0.27133825" />
+      <window_info active="true" content_ui="combo" x="789" y="61" width="342" height="917" id="Project" order="0" visible="true" weight="0.40937996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -221,7 +219,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3576881" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5888689" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -230,6 +228,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../ReactBasicProject/BasicApp/node_modules/@react-navigation/core/dist/getChildRouter.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature : Adding 2 feautures &#10;1) getAllAssets =&gt; retrieves the download images &#10;2) generate Reports in pdf by input html ." />
+    <option name="LAST_COMMIT_MESSAGE" value="feature : Adding 2 feautures &#10;1) getAllAssets =&gt; retrieves the download images &#10;2) generate Reports in pdf by input html ." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/puppeteer/.local-chromium/win64-609904/chrome-win/images/screenshot.png" />
@@ -318,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/getAllAssets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1040">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="71">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
         </state>
       </provider>
     </entry>
