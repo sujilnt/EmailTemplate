@@ -52,9 +52,13 @@ const loginScreen = (obj,fs)=>{
            const Electable = iframe.getElementById("div-table-summary");
            return Electable.outerHTML;*/
            
-           const gasTable = iframe.getElementById("summaryTable");
-           console.log(gasTable);
-           return gasTable;
+           const gasTable = iframe.getElementsByTagName("table");
+           console.log("show something........",iframe,iframeP,typeof(gasTable),[...gasTable]);
+           const listoFtables= [...gasTable].map((row)=>{
+               return row.outerHTML;
+           });
+           
+           return {tables: listoFtables , images: images};
        });
        
        console.log(iframeParagraph); // prints "This is a paragraph"
